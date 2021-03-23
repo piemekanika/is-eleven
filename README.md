@@ -1,6 +1,7 @@
 # What is this?
 
-Function that returns true when the given number equals to eleven.
+Function that returns true when the given number equals to
+[eleven](https://youtu.be/NMS2VnDveP8).
 
 # Why to use
 
