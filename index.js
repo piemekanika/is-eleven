@@ -1,5 +1,7 @@
 /**
  * Checks if the given value equals eleven.
+ * 
+ * @param int value
  *
  * @returns {boolean} is given value equals 11.
  */
