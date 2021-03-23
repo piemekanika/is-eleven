@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/piemekanika/is-eleven/issues"
   },
-  "homepage": "https://github.com/piemekanika/is-eleven#readme"
+  "homepage": "https://github.com/piemekanika/is-eleven#readme",
+  "dependencies": {
+    "is-number": "^7.0.0"
+  }
 }
