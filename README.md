@@ -1,12 +1,23 @@
 # What is this?
 
-Library that helps you to check if value equals 11.
+Function that returns true when the given number is eleven (11).
 
 # Installation
 
-Hope you how to install packages.
+```bash
+# npm
+npm i --save is-eleven
+
+# yarn
+yarn add is-eleven
+```
 
 # Usage
 
-@todo :)
+```js
+const { isEleven } = require('is-eleven');
+
+console.log(isEleven(11)); // true
+console.log(isEleven(12)); // false
+```
 
