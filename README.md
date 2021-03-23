@@ -18,6 +18,7 @@ yarn add is-eleven
 const { isEleven } = require('is-eleven');
 
 console.log(isEleven(11)); // true
+console.log(isEleven('11')); // true
 console.log(isEleven(12)); // false
 ```
 
