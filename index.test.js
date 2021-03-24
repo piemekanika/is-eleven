@@ -1,21 +1,41 @@
 const { isEleven } = require('./index');
 
-test('number 11 to be equal 11', () => {
-    expect(isEleven(11)).toBe(true);
-});
+const tests = [
+    {
+        expected: true,
+        comment: 'Expected ${value} ${type} to be equal ${expected}',
+        values: [
+            11,
+            0b1011,
+            '11',
+            ' 11',
+        ],
+    },
+    {
+        expected: false,
+        comment: 'Expected ${value} ${type} to be equal ${expected}',
+        values: [
+            12,
+            [11],
+            '12',
+            'foo11',
+            'foobar',
+            '11bar',
+            0x11,
+            0b11,
+        ],
+    },
+];
 
-test('number 12 to be not equal 11', () => {
-    expect(isEleven(12)).toBe(false);
-});
+tests.forEach(testCollection => {
+    testCollection.values.forEach(value => {
+        const comment = testCollection.comment
+            .replace('${value}', value)
+            .replace('${type}', typeof value)
+            .replace('${expected}', testCollection.expected);
 
-test('string "11" to be equal 11', () => {
-    expect(isEleven('11')).toBe(true);
-});
-
-test('string "12" to be not equal 11', () => {
-    expect(isEleven('12')).toBe(false);
-});
-
-test('string "oof" to be not equal 11', () => {
-    expect(isEleven('oof')).toBe(false);
+        test(comment, () => {
+            expect(isEleven(value)).toBe(testCollection.expected);
+        });
+    });
 });

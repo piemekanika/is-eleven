@@ -1,6 +1,6 @@
 {
   "name": "is-eleven",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Checks if value equals eleven",
   "main": "index.js",
   "scripts": {
