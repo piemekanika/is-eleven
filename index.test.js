@@ -3,7 +3,7 @@ const { isEleven } = require('./index');
 const tests = [
     {
         expected: true,
-        comment: 'Expected ${value} ${type} to be equal ${expected}',
+        comment: 'Expected ${type} ${value} to be equal ${expected}',
         values: [
             11,
             0b1011,
@@ -13,7 +13,7 @@ const tests = [
     },
     {
         expected: false,
-        comment: 'Expected ${value} ${type} to be equal ${expected}',
+        comment: 'Expected ${type} ${value} to be equal ${expected}',
         values: [
             12,
             [11],
