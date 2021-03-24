@@ -46,6 +46,10 @@ yarn add is-eleven
 
 ```js
 const { isEleven } = require('is-eleven');
+
+// or
+
+import { isEleven } from 'is-eleven'
 ```
 # Examples
 
